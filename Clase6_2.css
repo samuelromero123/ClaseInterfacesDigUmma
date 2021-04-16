@@ -1,0 +1,40 @@
+.encabezado {
+    color: antiquewhite !important;
+    background-color: chartreuse;
+    text-decoration: underline;
+    text-align: left;
+}
+
+h1 {
+    color: blueviolet;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#hola {
+    color: brown;
+    text-align: center;
+}
+
+.div1 {
+    background-color: lightgoldenrodyellow;
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.div2 {
+    background-color: lightpink;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.div3 {
+    background-color: lightseagreen;
+    color: magenta;
+    text-decoration: underline;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    /*outline: 1px solid red;*/
+    background-color: darkkhaki;
+}
+
+ul {
+    /*outline: 1px solid burlywood;*/
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+li {
+    /*outline: 1px solid darkcyan;*/
+    width: 100px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+
+a {
+    /*outline: 1px solid black;*/
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+img {
+    max-width: 1024px;
+    margin-top: 10px;
+}
+
+div {
+    align-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+a:hover {
+    background-color: #e91e63;
+    color: burlywood;
+}

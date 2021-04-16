@@ -1,0 +1,25 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    h1,
+    h2,
+    p {
+        color: blue;
+        padding-top: 5px;
+        margin: 5px;
+        text-align: center;
+        font-size: 30px;
+    }
+    /* .fondo 
+    p {
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+    */
+    
+    .parrafo {
+        position: relative;
+    }

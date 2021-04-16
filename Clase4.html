@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaBloques</title>
+</head>
+
+<body>
+    <h1>Clase de html Bloques</h1>
+    <h1 title="Nombre del alumno:">Samuel Iván Regueira Romero </h1>
+    <h2>Diseño Gráfico Digital</h2>
+
+    <hr>
+
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>Hola esta es una prueba del <u>div</u> con <u>style</u></h2>
+        <p>Wenas este texto ta dentro del div.</p>
+    </div>
+
+    <hr>
+
+    <h2>Lista no ordenada</h2>
+    <ul>
+        <li>Hola_1</li>
+        <li>Hola_2</li>
+        <li>Hola_3</li>
+        <li>Hola_4</li>
+        <li>Hola_5</li>
+    </ul>
+    <hr>
+
+    <h2>Lista ordenada</h2>
+    <ol>
+        <li>Adiós_1</li>
+        <li>Adiós_2</li>
+        <li>Adiós_3</li>
+        <li>Adiós_4</li>
+        <li>Adiós_5</li>
+    </ol>
+    <hr>
+
+    <h3>Prueba de Sección <q>section</q></h3>
+    <section>
+        <h4>Hola</h4>
+        <p>
+            Esta es la primera sección.
+        </p>
+    </section>
+
+    <section>
+        <h4>Holax2</h4>
+        <p>esta es la segunda sección</p>
+    </section>
+    <hr>
+
+    <h2>Prueba de Canvas</h2>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+            </script> 
+    </canvas>
+    <hr>
+
+    <h2>Prueba de dl (description list)</h2>
+    <dl>
+        <dt>Hola</dt>
+        <dd>Este es un <q>hola</q> bien escrito.</dd>
+        <dt>Ola</dt>
+        <dd>Este <q>hola</q> se encuentra mal escrito.</dd>
+    </dl>
+    <hr>
+
+    <h2>Prueba de <q>figure</q> y <q>figcaption</q></h2>
+    <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Daft_Punk_-_Discovery.jpg/220px-Daft_Punk_-_Discovery.jpg" alt="Esta imagen no se encuentra disponible" width="350" height="350">
+        <figcaption>Fig 1. Discovery Album Cover</figcaption>
+    </figure>
+    <hr>
+
+    <h2>Prueba del nav</h2>
+    <h4>Daft Punk Albums</h4>
+    <nav>
+
+        <a href="https://en.wikipedia.org/wiki/Homework_(Daft_Punk_album)">Homework</a> |
+        <a href="https://en.wikipedia.org/wiki/Discovery_(Daft_Punk_album)">Discovery</a> |
+        <a href="https://en.wikipedia.org/wiki/Random_Access_Memories">Random Access Memories </a> |
+
+    </nav>
+    <hr>
+
+
+    <h2>Prueba de Blockquote</h2>
+    <blockquote cite="https://en.wikipedia.org/wiki/Discovery_(Daft_Punk_album)">
+        In 1998, Daft Punk began recording their second album. The 2001 release of Discovery took on a slicker and distinctly synthpop-oriented style, surprising fans. The duo said that Discovery was conceived as an attempt to reconnect with a playful, open-minded
+        attitude associated with the discovery phase of childhood.
+    </blockquote>
+    <hr>
+    <h2>Prueba de fieldset</h2>
+    <p>Este fragmento de código fue recabado de <a href="https://www.w3schools.com/tags/tag_fieldset.asp">HTML fieldset Tag</a> </p>
+    <style>
+        fieldset {
+            background-color: #eeeeee;
+        }
+        
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+        }
+        
+        input {
+            margin: 5px;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <hr>
+        <p style="font-family: Arial, Helvetica, sans-serif; text-align: center;"><small>By Samuel Iván Regueira Romero</small></p>
+        <p style="font-family: Arial, Helvetica, sans-serif; text-align: center;"><small>Digital Graphic Designer</small></p>
+
+    </body>
+
+</html>
