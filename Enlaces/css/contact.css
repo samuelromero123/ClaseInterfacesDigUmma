@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    align-content: center;
+    outline-style: dotted;
+    width: 150px;
+    height: 150px;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+}
+
+textarea:focus,
+input:focus {
+    border-color: transparent;
+}
+
+button {
+    outline: none !important;
+    background: transparent;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}

@@ -1,18 +1,23 @@
+h1 {
+    color: crimson;
+}
+
 body {
     font-family: sans-serif;
 }
 
 nav {
-    /*outline: 1px solid red;*/
     background-color: darkkhaki;
     position: sticky;
+    top: 0;
 }
 
 ul {
-    /*outline: 1px solid burlywood;*/
     padding: 0px;
     margin: 0px;
     list-style: none;
+    display: inline-block;
+    text-align: center;
 }
 
 li {
@@ -23,7 +28,6 @@ li {
 }
 
 a {
-    /*outline: 1px solid black;*/
     text-decoration: none;
     display: block;
     color: white;
@@ -43,16 +47,4 @@ div {
 a:hover {
     background-color: #e91e63;
     color: burlywood;
-}
-
-.imagen {
-    background-image: url(/menuHorizontal/css/assets/img/kakashi.jpg);
-    width: 100px;
-    height: 100px;
-}
-
-.imagen2 {
-    background-image: url(/menuHorizontal/css/assets/img/kakashi.jpg);
-    width: fit-content;
-    height: fit-content;
 }
