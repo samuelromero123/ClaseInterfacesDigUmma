@@ -1,0 +1,45 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+}
+
+.portada {
+    width: 100%;
+    position: inherit;
+    background-image: url(/footer/assets/img/horniCat.jpg);
+}
+
+div {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+.mainImg {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: brown;
+    color: cornsilk;
+    text-align: center;
+}

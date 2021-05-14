@@ -1,0 +1,65 @@
+   .portada {
+       background-image: url(https://i.pinimg.com/originals/23/d9/f8/23d9f8ec0e4c8d6787b9bd3ad7354b81.jpg);
+       background-size: cover;
+       width: auto;
+       min-height: 100vh;
+       display: flex;
+   }
+   
+   .button {
+       text-decoration: none;
+       color: black;
+       background: rgba(255, 255, 255, 50);
+       position: relative;
+       margin: auto auto;
+       padding: 5px;
+       border-radius: 10px;
+       font-size: 40px;
+       font-weight: 800;
+       transition: 2s;
+       display: inline-block;
+   }
+   
+   .button:active {
+       transition: 1s;
+       transform: scale(.8);
+   }
+   
+   .button:hover {
+       background-color: skyblue;
+   }
+   
+   @media screen and (max-width:1150px) {
+       .portada {
+           background-size: auto;
+           width: 100%;
+       }
+   }
+   
+   @media screen and (max-width:800px) {
+       .portada {
+           width: 100%;
+           background-repeat: no-repeat;
+       }
+   }
+   
+   @media screen and (max-width:650px) {
+       .portada {
+           background-size: auto;
+       }
+   }
+   
+   @media screen and (max-width:400px) {
+       .portada {
+           background-size: contain;
+       }
+   }
+   
+   @media screen and (max-width:300px) {
+       .portada {
+           background-size: contain;
+           margin: 10px;
+           height: 10px;
+           min-height: 50vh;
+       }
+   }
