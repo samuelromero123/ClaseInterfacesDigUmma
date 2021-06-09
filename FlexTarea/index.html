@@ -16,9 +16,11 @@
     <a href="gImagenes.html" class="button">Galeria</a>
 </section>
 
+
 <body>
     <header id="header" class="header contenedor">
         <figure class="logotipo">
+
             <img src="/FlexTarea/assets/Img/samuel.jpg" width="140" height="60" alt="Logo">
         </figure>
         <span class="burguer-button icon menu" id="burger-button"></span>
@@ -41,6 +43,46 @@
         </nav>
 
     </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {
+                families: ['Roboto+Condensed:400,700:latin', 'Source+Sans+Pro:400,600,400italic,700italic,700:latin']
+            }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+            wf.type = 'text/javascript'
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <script>
+        function mediaQuery() {
+            if (consulta.matches) {
+                console.log('se cumplió la condicion');
+                $burguerButton.addEventListener('touchstart', toggleMenu);
+            } else {
+                $burguerButton.removeEventListener('touchstart', toggleMenu);
+                console.log('no se cumplió la condicion');
+            }
+        }
+        mediaQuery();
+
+        // lazy loading
+        var bLazy = new Blazy({
+            selector: 'img'
+        });
+        //gestos touch
+        var $body = document.body;
+        var gestos = new Hammer($body);
+        gestos.on('swiperight', showMenu);
+        gestos.on('swipeleft', hideMenu);
+    </script>
 
 </body>
 

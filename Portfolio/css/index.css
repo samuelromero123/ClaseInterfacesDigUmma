@@ -21,10 +21,18 @@
 .txt1 {
     text-align: center;
     font-family: Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .img1 {
     text-align: center;
+    border-radius: 50%;
+}
+
+img {
+    border-radius: 50%;
+    padding-bottom: 15px;
 }
 
 .breaker {
@@ -78,4 +86,11 @@ a {
 a:hover {
     text-decoration: line-through;
     color: #EE3351;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
 }
